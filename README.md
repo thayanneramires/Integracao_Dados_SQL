@@ -1,6 +1,8 @@
 # Integração e Análise de Dados
 
-### Este projeto tem como objetivo demonstrar o consumo e a integração de dados no PostgreSQL, além de abordar as etapas de transformação de dados (ETL), análise e validação de estratégias em conjunto com o cliente.
+Este projeto tem como objetivo demonstrar o consumo e a integração de dados no PostgreSQL, além de abordar as etapas de transformação de dados (ETL), análise e validação de estratégias em conjunto com o cliente.
+
+![case_banco_public](https://github.com/user-attachments/assets/03fb5efe-a26c-40ad-a1f7-676510b5bd50)
 
 ## Integração de Dados
 O arquivo SQL `case_banco.sql` foi utilizado tanto para criar a estrutura das tabelas, por meio de comandos CREATE, quanto para inserir dados nelas, utilizando comandos INSERT, preenchendo assim o banco de dados inicialmente vazio.
