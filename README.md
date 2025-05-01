@@ -2,9 +2,8 @@
 
 Este projeto tem como objetivo demonstrar o consumo e a integração de dados no PostgreSQL, além de abordar as etapas de transformação de dados (ETL), análise e validação de estratégias em conjunto com o cliente.
 
-![case_banco_public](https://github.com/user-attachments/assets/03fb5efe-a26c-40ad-a1f7-676510b5bd50)
+![case_banco - public](https://github.com/user-attachments/assets/abd95d81-4220-43ce-8aec-5c4b8526889f)
 
-## Integração de Dados
 O arquivo SQL `case_banco.sql` foi utilizado tanto para criar a estrutura das tabelas, por meio de comandos CREATE, quanto para inserir dados nelas, utilizando comandos INSERT, preenchendo assim o banco de dados inicialmente vazio.
 
 ## Parte 1 – Consultas SQL
@@ -21,6 +20,7 @@ where DATA_EMISSAO between '2025-02-01' and '2025-02-28'
 group by MES, PRODUTO_ID
 order by TOTAL_CONSUMO DESC
 ````
+![image](https://github.com/user-attachments/assets/71f09d03-be91-412f-97a4-f7f052247384)
 
 ### 1.2 – Produtos com requisição pendente
 ````
@@ -35,6 +35,7 @@ from PEDIDO_COMPRA
 where QTDE_PENDENTE > 0
 order by QTDE_PENDENTE DESC;
 ````
+![image](https://github.com/user-attachments/assets/06843a30-925b-4eac-bb97-c148cf4846c6)
 
 ### 1.3 – Produtos não consumidos e não recebidos
 
@@ -57,6 +58,7 @@ where to_char(P.DATA_PEDIDO, 'MM-YYYY') = '02-2025'
 	and V.PRODUTO_ID is null
 	and E.PRODUTO_ID is null;
 ````
+![image](https://github.com/user-attachments/assets/35257c21-7f3a-4593-b424-a3db0dccc12a)
 
 ## Parte 2 – Transformações de Dados para Pedidos de Compra e Venda
 
@@ -73,6 +75,7 @@ select
 from pedido_compra
 where qtde_pedida > 10
 ````
+![image](https://github.com/user-attachments/assets/bb028418-3503-4589-929c-f9d3ecf7801b)
 
 ````
 -- Transformações para Pedidos de Venda
@@ -83,6 +86,7 @@ select
 from venda
 where qtde_vendida > 10;
 ````
+![image](https://github.com/user-attachments/assets/7045b5e1-60d4-429b-ba1b-63aa38924f33)
 
 ## Parte 3 – Estratégia de Validação com o Cliente
 
