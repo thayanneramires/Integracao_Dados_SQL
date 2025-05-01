@@ -93,5 +93,33 @@ where qtde_vendida > 10;
 Imaginando que é preciso validar os dados do mês de Fevereiro de 2025 com o cliente:
 
 1. Quais seriam os principais pontos que você validaria com o cliente?
-2. Quais técnicas utilizaria para garantir a exatidão e a precisão dos dados?
-3. Quais consultas você deixaria prontas para usar na reunião de validação?
+   
+   • Podutos mais vendidos e menos vendidos
+   
+   • Quantidade e Custo de mercadorias que entraram
+   
+   • Produtos com requisição pendente
+   
+   • Pedidos de compra de produtos sem vendas
+   
+3. Quais técnicas utilizaria para garantir a exatidão e a precisão dos dados?
+
+   • Comparar diretamente com as rotinas do ERP do Cliente
+   
+   • Comparar com planilhas de controle manual do cliente
+   
+   • Alinhar com o cliente se os dados refletem a realidade
+   
+4. Quais consultas você deixaria prontas para usar na reunião de validação?
+   
+   • Consulta de resumo de vendas por produto em fevereiro, contendo o total de vendas (distinct count de venda_id), qtde_vendida, valor_unitario , faturamento (qtde_vendida * valor_unitario ) e ticket médio (faturamento/ total de vendas)
+   
+   • Consulta de entrada de produtos em fevereiro, exibindo tanto a quantidade recebida quanto o custo
+   
+   • Conculta de resumo de pedidos de compra, contendo a qtde_pedida, qtde_entregue, qtde_pendente e data da última entrega
+   
+   • Consulta de produtos que foram requisitados, mas não consumidos
+   
+   • Consulta de com valores de entrada e saída de produtos por mês
+
+   
