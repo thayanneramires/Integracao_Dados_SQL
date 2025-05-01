@@ -1,6 +1,6 @@
-# Integração e Análise de Dados
+# Integração de Dados
 
-Este projeto tem como objetivo demonstrar o consumo e a integração de dados no PostgreSQL, além de abordar as etapas de transformação de dados (ETL), análise e validação de estratégias em conjunto com o cliente.
+Este projeto tem como objetivo demonstrar o consumo e a integração de dados no PostgreSQL, além de abordar as etapas de transformação de dados (ETL) e validação de estratégias em conjunto com o cliente.
 
 ![case_banco - public](https://github.com/user-attachments/assets/abd95d81-4220-43ce-8aec-5c4b8526889f)
 
